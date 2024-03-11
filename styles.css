@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    ;
+}
+
+:root {
+    /* text colors */
+    --h1-color: #302D2C;
+    --h2-color: #854632;
+    --h3-color: #7B284F;
+    --subhead-color: #5F574E;
+
+
+    /* background color */
+    --content-bg-color: #FFFFFF;
+    --rosewhite-bg-color: #FFF5FA;
+
+    /* divider hr color */
+    --line-color: #B5C0D0;
+
+}
+
+body {
+    background-color: #F3E6D8;
+    font-family: "Outfit", sans-serif;
+    color: var(--subhead-color);
+}
+
+h1,
+h2 {
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+}
+
+h1 {
+    color: var(--h1-color);
+    font-size: 2.5em;
+    line-height: 2em;
+}
+
+h2 {
+    color: var(--h2-color);
+    font-size: 2em;
+    margin: 20px 0 0 0;
+}
+
+h3 {
+    color: var(--h3-color);
+    font-size: 1.25em;
+}
+
+span {
+    color: var(--subhead-color);
+    font-weight: bold;
+}
+
+ul {
+    padding: 10px 0 0 20px;
+    margin-bottom: 30px;
+}
+
+ul li {
+    list-style-position: outside;
+    padding: 5px 5px 5px 10px;
+}
+
+hr {
+    color: var(--line-color);
+}
+
+/* CONTAINER CTYLES */
+.container {
+    background-color: var(--content-bg-color);
+    width: 50%;
+    margin: 150px auto;
+    border-radius: 30px;
+}
+
+
+/* MAIN STYLES */
+main {
+    width: 90%;
+    margin: auto;
+}
+
+/* HEADER CONTENT */
+.header {
+    padding: 40px 0 10px 0;
+}
+
+.header-img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+/* TIME-CONTENT STYLES */
+.time-content {
+    background-color: var(--rosewhite-bg-color);
+    border-radius: 10px;
+    padding: 30px;
+    margin: 2em 0;
+}
+
+.time-content ul li::marker {
+    color: var(--h3-color);
+    font-size: 12px;
+}
+
+/* INGREDIENTS CONTENT STYLES */
+.ingredients-content ul li::marker {
+    color: var(--h2-color);
+    font-size: 12px;
+}
+
+/* ISTRUCTIONS STYLES */
+.Instructions-content ul li {
+    list-style-type: numbers;
+}
+
+.Instructions-content ul li::marker {
+    color: var(--h2-color);
+    font-weight: bold;
+}
+
+/* NUTRITION SECTION STYLES */
+.Nutrition-content {
+    padding: 20px 0;
+}
+
+.Nutrition-content h2 {
+    margin: 10px 0 15px 0;
+}
+
+.Nutrition-content table {
+    width: 100%;
+    margin: 15px 0;
+}
+
+table td {
+    padding: 13px 30px;
+}
+
+table tr td:nth-of-type(2n) {
+    color: var(--h2-color);
+    font-weight: bold;
+}
+
+@media only screen and (max-width:769px) {
+    .container {
+        background-color: var(--content-bg-color);
+        width: 90%;
+        margin: 50px auto;
+        border-radius: 30px;
+    }
+
+    h1 {
+        line-height: 1.5em;
+    }
+}
+
+@media only screen and (max-width:380px) {
+    .container {
+        background-color: var(--content-bg-color);
+        width: 100%;
+        margin: 0;
+        border-radius: 0;
+    }
+
+    h1 {
+        line-height: 1em;
+    }
+}
